@@ -1,5 +1,4 @@
 #!/bin/bash
 
 FILE=$1
-dirname "$FILE"
-
+dirname "$FILE" | cut -f2 -d "/"
