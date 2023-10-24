@@ -19,7 +19,7 @@ while getopts "p:d" flag;do
     esac
 done
 
-if [$path1 -ot $path2]; then 
+if [ $path1 -ot $path2 ]; then 
   echo "$path1 older then $path2"
 else
   echo "$path2 older then $path1"
