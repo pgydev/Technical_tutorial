@@ -2,6 +2,6 @@
 
 RED="\033[31m"
 BROWN="\033[0;33m"
+NOCOLOR="\033[0;0m"
 
-echo -e "${RED} RED DOG"
-echo -e "${BROWN} BROWN FOX"
+echo -e " Lazy ${RED}RED DOG ${NOCOLOR} jumps over  ${BROWN}BROWN FOX${NOCOLOR}"

@@ -1,5 +1,5 @@
 #!/bin/bash
 
-FILE=$1
-basename "$FILE" | cut -f1 -d "."
+FPATH=$1
 
+echo "${FPATH##*/}"

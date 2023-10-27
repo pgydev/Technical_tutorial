@@ -1,5 +1,4 @@
 #!/bin/bash
 
-val=$(($1/$2))
 
-echo $val | bc
+echo "scale=4; $1/$2" | bc -l

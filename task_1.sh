@@ -1,4 +1,5 @@
 #!/bin/bash
 
-FILE=$1
-dirname "$FILE" | cut -f2 -d "/"
+FPATH=$1
+
+echo "${FPATH%/*}"
