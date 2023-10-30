@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in $@
+for i in "${@}"
 do
  sum=$(($sum+$i))
 done

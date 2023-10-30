@@ -1,0 +1,14 @@
+#!/bin/bash
+
+FPATH=${1}
+
+SECONDHALF="${FPATH#/*/*/}"
+DIF=${FPATH%"${SECONDHALF}"}
+FIRSTHALF="${DIF%*/*/}"
+MODIFIEDP="${FIRSTHALF}/2/${SECONDHALF}"
+
+
+
+echo "${MODIFIEDP}"
+
+

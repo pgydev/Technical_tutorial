@@ -16,6 +16,9 @@ while getopts "p:d" flag;do
     d)
      set -x
      ;;
+	*)
+	 print_help
+	 ;;
     esac
 done
 
